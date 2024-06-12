@@ -17,16 +17,16 @@ struct AddView: View {
     var body: some View {
         ScrollView {
             VStack {
-                TextField("Type something here...", text: $textFieldText)
+                TextField("TEXT_TEXTFIELD_PLACEHOLDER", text: $textFieldText)
                     .padding(.horizontal)
                     .frame(height: 55)
-                    .background(Color.white)
+                    .background(Color(UIColor.secondarySystemBackground))
                     .cornerRadius(10)
                 
                 Button(action: {
                     saveButtonPressed()
                 }, label: {
-                    Text("Save".uppercased())
+                    Text("TEXT_SAVE_PLACEHOLDER")
                         .font(.headline)
                         .frame(maxWidth: .infinity)
                         .frame(height: 55)
@@ -37,29 +37,34 @@ struct AddView: View {
             }
             .padding(.all)
         }
-        .navigationTitle("Add an Item ✎")
-        .alert(isPresented: $showAlert, content: getAlert)
+        .navigationTitle("TEXT_AN_ITEM_PLACEHOLDER")
+        .alert(isPresented: $showAlert, content: {
+            Alert(title: Text("TEXT_ALERT_PLACEHOLDER"))
+        })
     }
     
     func saveButtonPressed(){
-        if textIsAppropriate() {
+        if (textFieldText.count < 3) {
+            showAlert.toggle()
+        }
+        else {
             listViewModel.addItem(title: textFieldText)
             presentationMode.wrappedValue.dismiss()
         }
     }
     
-    func textIsAppropriate() -> Bool {
-        if(textFieldText.count < 3){
-            showAlert.toggle()
-            alertTitle = "Item must be at Least 3 characters long !"
-            return false
-        }
-        return true
-    }
+//    func textIsAppropriate() -> Bool {
+//        if(textFieldText.count < 3){
+//            showAlert.toggle()
+//            alertTitle = "TEXT_ALERT_PLACEHOLDER"
+//            return false
+//        }
+//        return true
+//    }
     
-    func getAlert() -> Alert{
-        return Alert(title: Text(alertTitle))
-    }
+//    func getAlert() -> Alert{
+//        Alert(title: Text(alertTitle))
+//    }
 }
 
 #Preview {

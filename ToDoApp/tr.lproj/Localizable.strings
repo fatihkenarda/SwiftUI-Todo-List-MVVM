@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  ToDoApp
+
+  Created by Fatih Kenarda on 12.06.2024.
+  
+*/
+
+"TEXT_PLACEHOLDER" = "Hiçbir öğe bulunmuyor !";
+"TEXT_DESC_PLACEHOLDER" = "Not eklemek istiyorsanız düğmeye basın";
+"TEXT_TODO_PLACEHOLDER" = "Yapılacaklar Listesi  📝";
+"ADD_BUTTON_PLACEHOLDER" = "Not Ekle";
+"NAVIGATION_ADD_BUTTON_PLACEHOLDER" = "Ekle";
+"TEXT_AN_ITEM_PLACEHOLDER" = "Bir Şey Ekle ✎";
+"TEXT_ALERT_PLACEHOLDER" = "Yapılacak şey en az 3 karakter uzunluğunda olmalıdır !";
+"TEXT_TEXTFIELD_PLACEHOLDER" = "Bir şeyler yazın...";
+"TEXT_SAVE_PLACEHOLDER" = "Kaydet";

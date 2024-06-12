@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  ToDoApp
+
+  Created by Fatih Kenarda on 12.06.2024.
+  
+*/
+
+"TEXT_PLACEHOLDER" = "There are no items !";
+"TEXT_DESC_PLACEHOLDER" = "Press the button if you want to add a note";
+"TEXT_TODO_PLACEHOLDER" = "Todo List 📝";
+"ADD_BUTTON_PLACEHOLDER" = "Add Something";
+"NAVIGATION_ADD_BUTTON_PLACEHOLDER" = "Add";
+"TEXT_AN_ITEM_PLACEHOLDER" = "Add an Item ✎";
+"TEXT_ALERT_PLACEHOLDER" = "Item must be at Least 3 characters long !";
+"TEXT_TEXTFIELD_PLACEHOLDER" = "Type something here...";
+"TEXT_SAVE_PLACEHOLDER" = "Save";
+
